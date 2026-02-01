@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="card" id="page1">
+      <div class="icon">🐻</div>
+      <h1>Nirali, will you be my Valentine?</h1>
+      <div class="buttons">
+        <button id="yesBtn">Yes 💗</button>
+        <button id="noBtn">No</button>
+      </div>
+    </div>
+
+    <div class="card hidden" id="page2">
+      <div class="icon">🎉</div>
+      <h1>Kuhu, will you be my Valentine? YAY! 💖</h1>
+      <img
+        class="gif"
+        src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif"
+        alt="celebration"
+      />
+    </div>
+  </div>
+
+  <div id="popup" class="popup hidden"></div>
+  <canvas id="confetti"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
