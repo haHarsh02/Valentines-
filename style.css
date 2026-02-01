@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #f7dce9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.card {
+  background: white;
+  width: 320px;
+  padding: 30px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.hidden {
+  display: none;
+}
+
+.icon {
+  font-size: 50px;
+  margin-bottom: 12px;
+}
+
+h1 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.buttons {
+  position: relative;
+  height: 60px;
+}
+
+button {
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.25s ease;
+}
+
+#yesBtn {
+  background: #ff6fa5;
+  color: white;
+}
+
+#noBtn {
+  background: #ccc;
+  color: #333;
+  position: absolute;
+  left: 120px;
+}
+
+.gif {
+  width: 200px;
+  margin-top: 15px;
+}
+
+/* Popup */
+.popup {
+  position: fixed;
+  bottom: 22%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 12px 22px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  font-size: 14px;
+  animation: pop 0.35s ease;
+  z-index: 1000;
+}
+
+@keyframes pop {
+  from {
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
